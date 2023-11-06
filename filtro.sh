@@ -1,7 +1,6 @@
 #!/bin/bash
 texto=./texto.txt
 
-if [ -e $texto ]
-    texto_sem_frases=$(echo "$texto" | grep "O dia estava lindo\.//; O sol brilhava no céu\.//; s/As aves cantavam\.//')
-
-echo "$texto_sem_frases"
+cat ./texto.txt | grep "O dia estava lindo"
+cat ./texto.txt | grep "o sol brilhava no céu"
+cat ./texto.txt | grep "as aves cantavam"
